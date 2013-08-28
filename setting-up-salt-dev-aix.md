@@ -206,6 +206,7 @@ dependencies and salt included.
     cd /opt/freeware/src/packages/SOURCES
     wget https://pypi.python.org/packages/source/s/salt/salt-0.16.3.tar.gz
     cd ../SPECS/
+    wget https://gist.github.com/kriberg/6365078/raw/5fece1f9e5ffcd14663f9b4978967d21bd8f9cc8/salt.spec
     rpm -bb salt.spec
     cd ../RPMS/noarch/
     rpm -Uvh salt-*.rpm
