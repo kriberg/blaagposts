@@ -215,4 +215,90 @@ You should now be able to start salt with:
 
     salt-minion -c /opt/freeware/etc/salt -l debug
 
-If you didn't, well... 
+Here's the output from ``salt-call --local grains.items``:
+
+    [WARNING ] The tools 'dmidecode', 'lspci' and 'dmesg' failed to execute because they do not exist on the system of the user running this instance or the user does not have the necessary permissions to execute them. Grains output might not be accurate.
+    cpuarch:
+        *************
+    defaultencoding:
+        ISO8859-1
+    defaultlanguage:
+        no_NO
+    domain:
+        
+    fqdn:
+        *************
+    gpus:
+    host:
+        *************
+    id:
+        *************
+    ip_interfaces:
+        ----------
+        en0:
+            - ***************
+        en1:
+            - ***************
+        lo0:
+            - 127.0.0.1
+    ipv4:
+        - ***************
+        - ***************
+        - 127.0.0.1
+    kernel:
+        AIX
+    kernelrelease:
+        1
+    localhost:
+        *************
+    master:
+        salt
+    mem_total:
+        0
+    nodename:
+        *************
+    num_gpus:
+        0
+    os:
+        AIX
+    os_family:
+        AIX
+    path:
+        /opt/freeware/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/usr/bin/X11:/sbin:/usr/java5/jre/bin:/usr/java5/bin
+    ps:
+        ps -efH
+    pythonpath:
+        - /opt/freeware/bin
+        - /opt/freeware/lib/python2.7/site-packages/distribute-0.7.3-py2.7.egg
+        - /opt/freeware/lib/python2.7/site-packages/pip-1.4.1-py2.7.egg
+        - /tmp/distribute-0.7.3
+        - /opt/freeware/lib/python2.7/site-packages/Jinja2-2.7.1-py2.7.egg
+        - /opt/freeware/lib/python2.7/site-packages/MarkupSafe-0.18-py2.7-aix-7.1.egg
+        - /opt/freeware/lib/python2.7/site-packages/M2Crypto-0.21.1-py2.7-aix-7.1.egg
+        - /opt/freeware/lib/python2.7/site-packages/msgpack_python-0.3.0-py2.7-aix-7.1.egg
+        - /opt/freeware/lib/python2.7/site-packages/PyYAML-3.10-py2.7-aix-7.1.egg
+        - /opt/freeware/lib/python27.zip
+        - /opt/freeware/lib/python2.7
+        - /opt/freeware/lib/python2.7/plat-aix7
+        - /opt/freeware/lib/python2.7/lib-tk
+        - /opt/freeware/lib/python2.7/lib-old
+        - /opt/freeware/lib/python2.7/lib-dynload
+        - /opt/freeware/lib/python2.7/site-packages
+    pythonversion:
+        - 2
+        - 7
+        - 5
+        - final
+        - 0
+    saltpath:
+        /opt/freeware/lib/python2.7/site-packages/salt
+    saltversion:
+        0.16.3
+    server_id:
+        **********
+    shell:
+        /usr/bin/ksh
+    virtual:
+        physical
+
+Some information has been omitted for security reasons.
