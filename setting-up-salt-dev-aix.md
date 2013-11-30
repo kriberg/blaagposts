@@ -34,7 +34,6 @@ RPM sources:
 * fontconfig-2.8.0-2.aix5.1.ppc.rpm
 * freetype2-2.5.0-1.aix5.1.ppc.rpm
 * gdbm-1.10-1.aix5.1.ppc.rpm
-* gdbm-1.8.3-5.aix5.2.ppc.rpm
 * gdbm-devel-1.10-1.aix5.1.ppc.rpm
 * glib2-2.34.3-1.aix5.1.ppc.rpm
 * libffi-3.0.13-1.aix5.1.ppc.rpm
@@ -69,9 +68,9 @@ original perzl srpm. It will compile python with GCC and setup the module
 builder to use GCC instead of XLC.
 
     rpm -i python-2.7.5-1.src.rpm
-    wget -O /opt/freeware/src/packages/spec/python-2.7.5-2.spec \
+    wget -O /opt/freeware/src/packages/SPECS/python-2.7.5-2.spec \
     "http://github.com/kriberg/6351551/raw/27a8cf905468fd08a5ae619b9c73fa5ffcc334c2/python-2.7.5-2.spec"
-    rpm -bb /opt/freeware/src/packages/spec/python-2.7.5-2.spec
+    rpm -bb /opt/freeware/src/packages/SPECS/python-2.7.5-2.spec
 
 If everything compiles correctly, you should have the python 2.7.5 rpms in
 /opt/freeware/src/packages/RPMS/ppc/. 
